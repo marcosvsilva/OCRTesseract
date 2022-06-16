@@ -1,0 +1,43 @@
+name: chatbot-tools
+
+channels:
+  - pytorch
+  - fastai
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.9
+  - pip
+  - minio
+  - onnxruntime
+
+  - python-dotenv=0.20
+  - fastapi=0.75
+  - uvicorn[standard]=0.17
+  - scipy=1.8
+  - requests=2.27
+  - requests-toolbelt=0.9
+  - validators=0.18
+  - pandas=1.4
+  - textdistance=4.2
+  - spacy=3.2
+  - plotly=5.7
+
+  - scikit-image=0.19
+
+  - python-engineio
+  - python-socketio[asyncio_client]
+
+  - pip:
+      - StringDist~=1.0
+      - cyhunspell~=2.0
+      - sentence-transformers~=2.2
+      - simpleeval~=0.9
+      - lexical-diversity~=0.1
+
+  - black
+  - flake8
+  - isort
+  - pylint
